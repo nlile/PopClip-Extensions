@@ -1,0 +1,16 @@
+// #popclip
+// { name: Chars
+// , entitlements: [dynamic]
+// , module: true
+// , language: javascript }
+
+// runs on every PopClip pop appear
+exports.actions = (input /* = popclip.input */) => {
+  const chars = input.text.length;             // count characters :contentReference[oaicite:0]{index=0}
+  return [{
+    // no icon field, will show this title directly on btn vs tooltip. :contentReference[oaicite:1]{index=1}
+    title: `${chars} chars`,
+    // on click show a transient popup
+    code: () => popclip.showText(`Chars: ${chars}`)
+  }];
+};
