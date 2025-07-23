@@ -5,7 +5,7 @@
 	<key>Extension Name</key>
 	<dict>
 		<key>en</key>
-		<string>Character Count</string>
+		<string>Char Count</string>
 		<key>fr</key>
 		<string>Nombre de caractères</string>
 	</dict>
@@ -17,9 +17,9 @@
 			<key>Title</key>
 			<dict>
 				<key>en</key>
-				<string>{popclip charcount} Characters</string>
+				<string>{popclip charcount} chars</string>
 				<key>fr</key>
-				<string>{popclip charcount} Caractères</string>
+				<string>{popclip charcount} chars</string>
 			</dict>
 		</dict>
 	</array>
