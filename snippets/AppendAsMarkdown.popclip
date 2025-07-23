@@ -1,0 +1,23 @@
+// #popclip
+// { name: Append as Markdown
+// , icon: symbol:star.circle
+// , capture html: true
+// , after: show-success
+// , language: javascript }
+
+// built‑in lib (PopClip bundles Turndown v7) :contentReference[oaicite:0]{index=0}
+const TurndownService = require('turndown');
+const td = new TurndownService();
+
+// prefer bundled md if avail; otherwise, convert HTML/plain text
+const md = popclip.input.markdown               // auto‑gen when capture html=true :contentReference[oaicite:1]{index=1}
+          || td.turndown(popclip.input.html || popclip.input.text);
+
+// read current clipboard
+const current = pasteboard.text || '';          // read/write property :contentReference[oaicite:2]{index=2}
+
+// appends w a double line break (personal pref)
+const out = current ? current + '\n\n' + md : md;
+
+// copy back to clipboard
+popclip.copyText(out);
