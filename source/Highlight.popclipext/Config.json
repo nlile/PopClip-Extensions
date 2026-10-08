@@ -11,7 +11,8 @@
         "net.sourceforge.skim-app.skim",
         "com.evernote.Evernote",
         "com.readdle.PDFExpert-Mac",
-        "md.obsidian"
+        "md.obsidian",
+        "com.ngocluu.goodlinks"
       ]
     },
     {
@@ -45,5 +46,5 @@
       "requiredApps": ["com.apple.Notes"]
     }
   ],
-  "description": "Highlight the selected text. Works in Pages, Preview, Alternote, DevonThink, Evernote, iA Writer, iA Presenter, LogSeq, Obsidian, PDFpen, PDF Expert, Scrivener, Skim and Apple Notes only."
+  "description": "Highlight the selected text. Works in Pages, Preview, Alternote, DevonThink, Evernote, Goodlinks, iA Writer, iA Presenter, LogSeq, Obsidian, PDFpen, PDF Expert, Scrivener, Skim and Apple Notes only."
 }
